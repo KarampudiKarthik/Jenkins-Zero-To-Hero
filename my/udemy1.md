@@ -32,30 +32,37 @@ sudo apt-get update
 sudo apt-get install jenkins
 ```
 password location: /var/lib/jenkins/secrets/initialAdminPassword
+
 location: /var/lib/jenkins/
 
-##install tools and plugins
-pugins:Nexus Artifact Uploader,SonarQube Scanner,Build Timestamp,Pipeline Maven Integration,Pipeline Utility Steps
+## install tools and plugins
+Install pugins : Nexus Artifact Uploader,SonarQube Scanner,Build Timestamp,Pipeline Maven Integration,Pipeline Utility Steps
+
 1.open manage jenkins>tools>click on add jdk
 >name:OpenJDK17
->>path:/usr/lib/jvm/java-1.17.0-openjdk-amd64
+
+>path:/usr/lib/jvm/java-1.17.0-openjdk-amd64
+
 Note: version of name and path will be same. for path and name and versioncheck in ec2 instance
 
 2. add maven
-   >name:MAVEN3
+   
+   name:MAVEN3
 
 after open jenkins and go to manage jenkins >plugins download docker pipeline and restart
 
 environmen variables: https://wiki.jenkins.io/display/JENKINS/Building+a+software+project
 
-##Jenkins,Nexus and Sonarqube setup
+## Jenkins,Nexus and Sonarqube setup
 
 link: https://github.com/hkhcoder/vprofile-project/tree/ci-jenkins/userdata
 
 we can also do it in local
-link: https://www.youtube.com/watch?v=TRI-GfkCNeE&ab_channel=DevOpsVijay
->url for nexus: http://localhost:8081
->url for sonaeqube: http://localhost:9000
+>link: https://www.youtube.com/watch?v=TRI-GfkCNeE&ab_channel=DevOpsVijay
+
+url for nexus: http://localhost:8081
+
+url for sonaeqube: http://localhost:9000
 
 
 
