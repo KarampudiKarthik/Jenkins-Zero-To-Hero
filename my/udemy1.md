@@ -26,12 +26,14 @@ location: /var/lib/jenkins/
 1.open manage jenkins>tools>click on add jdk
 >name:OpenJDK17
 >>path:/usr/lib/jvm/java-1.17.0-openjdk-amd64
+Note: version of name and path will be same. for path and name and versioncheck in ec2 instance
 
 2. add maven
    >name:MAVEN3
 
 after open jenkins and go to manage jenkins >plugins download docker pipeline and restart
 
+environmen variables: https://wiki.jenkins.io/display/JENKINS/Building+a+software+project
 
 
 
