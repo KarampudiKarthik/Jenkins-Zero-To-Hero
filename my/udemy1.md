@@ -1,3 +1,15 @@
+## ## install jenkins local
+1. download jdk and extract
+follow this video: https://www.youtube.com/watch?v=BzjAMcV-U2w&ab_channel=javafrm
+2. download jenkins
+follow this video: https://www.youtube.com/watch?v=Zdxko2bPAAw&ab_channel=ProgrammingKnowledge
+
+login: http://localhost:8080/
+>for password go to the path as shown in screen
+
+>in manage jenkins> plugins> install docker pipeline
+>>manage jenkins> tools> add jdk, Git along with path
+
 ## install jenkins 
 docu: https://www.jenkins.io/doc/book/installing/linux/
 
