@@ -47,9 +47,13 @@ after open jenkins and go to manage jenkins >plugins download docker pipeline an
 
 environmen variables: https://wiki.jenkins.io/display/JENKINS/Building+a+software+project
 
+##Jenkins,Nexus and Sonarqube setup
 
+link: https://github.com/hkhcoder/vprofile-project/tree/ci-jenkins/userdata
 
-
-
+we can also do it in local
+link: https://www.youtube.com/watch?v=TRI-GfkCNeE&ab_channel=DevOpsVijay
+>url for nexus: http://localhost:8081
+>url for sonaeqube: http://localhost:9000
 
 
