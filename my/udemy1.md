@@ -35,6 +35,7 @@ password location: /var/lib/jenkins/secrets/initialAdminPassword
 location: /var/lib/jenkins/
 
 ##install tools and plugins
+pugins:Nexus Artifact Uploader,SonarQube Scanner,Build Timestamp,Pipeline Maven Integration,Pipeline Utility Steps
 1.open manage jenkins>tools>click on add jdk
 >name:OpenJDK17
 >>path:/usr/lib/jvm/java-1.17.0-openjdk-amd64
@@ -55,5 +56,6 @@ we can also do it in local
 link: https://www.youtube.com/watch?v=TRI-GfkCNeE&ab_channel=DevOpsVijay
 >url for nexus: http://localhost:8081
 >url for sonaeqube: http://localhost:9000
+
 
 
