@@ -9,7 +9,7 @@ docker containing hosting platform
 ### pre reques
 1. create ECS cluster
 2. create ECS service
-3. install plugin `pipeline: aws steps
+3. install plugin `pipeline: aws steps`
 
 
 ### 1. setup ECS cluster
@@ -64,6 +64,10 @@ select application load balancer
 target group name -vproecstg
 
 health check path - /login
+
+### 3. install plugin in jenkins 
+
+install pipeline: aws steps
 
 ```
 pipeline {
