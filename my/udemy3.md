@@ -182,3 +182,5 @@ pipeline {
   }
 }
 ```
+
+### it will build docker image and upload to ECR. we can check there in repo
