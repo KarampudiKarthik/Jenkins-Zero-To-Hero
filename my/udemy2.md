@@ -109,7 +109,39 @@ here i am using slack notification
 8. configure slack using token
 9. save
 
-example:
+example: basic layout
+```
+def COLOR_MAP = [
+    'SUCCESS': 'good', 
+    'FAILURE': 'danger',
+]
+pipeline {
+    agent any
+    tools {
+	    maven "MAVEN3"
+	    jdk "OracleJDK8"
+	}
+
+    stages{
+        stage('Print error'){
+            steps{
+                sh 'fake comment'
+            }
+        }
+       
+    post {
+        always {
+            echo 'Slack Notifications.'
+            slackSend channel: '#jenkinscicd',
+                color: COLOR_MAP[currentBuild.currentResult],
+                message: "*${currentBuild.currentResult}:* Job ${env.JOB_NAME} build ${env.BUILD_NUMBER} \n More info at: ${env.BUILD_URL}"
+        }
+    }
+    
+}
+```
+
+Example: in previous project
 ```
 def COLOR_MAP = [
     'SUCCESS': 'good', 
