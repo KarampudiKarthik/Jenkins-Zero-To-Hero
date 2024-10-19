@@ -15,6 +15,8 @@ docker containing hosting platform
 ### 1. setup ECS cluster
 1. go to ECS > clusters > create cluster
 
+![image alt](https://github.com/KarampudiKarthik/Jenkins-Zero-To-Hero/blob/main/my/img/Capture2.PNG?raw=true)
+
 
 ```
 pipeline {
