@@ -17,6 +17,53 @@ docker containing hosting platform
 
 ![image alt](https://github.com/KarampudiKarthik/Jenkins-Zero-To-Hero/blob/main/my/img/Capture2.PNG?raw=true)
 
+2. create new task definition
+> url from ECR
+
+![image alt](https://github.com/KarampudiKarthik/Jenkins-Zero-To-Hero/blob/main/my/img/Capture3.PNG?raw=true)
+
+![image alt](https://github.com/KarampudiKarthik/Jenkins-Zero-To-Hero/blob/main/my/img/Capture4.PNG?raw=true)
+
+
+3. go to iAM > users> ecstaskexecutionrole and allow cloudwatchlogsfullaccess
+
+![image alt](https://github.com/KarampudiKarthik/Jenkins-Zero-To-Hero/blob/main/my/img/Capture6.PNG?raw=true)
+
+4. go to ECS > cluster > our project cluster(name) > create service
+   
+(i) scroll down to deployment configuration
+
+1. family- vprofileapptask
+2. revision - latest
+3. service name - vprofileappsvc
+4. uncheck deployment failure detection
+
+(ii) go to networking
+
+1. create new security group
+> name - vproappecselb-sg
+2. inbound rules
+
+type-http
+
+source- anywhere
+
+add another rule
+
+type- custom tcp
+
+port - 8080
+
+source- anywhere
+
+(iii) go to load balancer
+
+select application load balancer
+> name - vproappelnecs
+
+target group name -vproecstg
+
+health check path - /login
 
 ```
 pipeline {
