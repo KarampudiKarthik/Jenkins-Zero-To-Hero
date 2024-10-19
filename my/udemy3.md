@@ -79,13 +79,17 @@ download the file
 ### 3. ECR (Elastic Container Registry)
 1. search for ECR in services
 2. create repo, it will have url.
-3. save the url
+3. save the url ( we need to copy in the code `appRegistry`, `vprofileRegistry` in env)
 
-### Install plugins in Jenkins
+### 4. Install plugins in Jenkins
 1. docker pipeline
 2. Amazon ECR
 3. Aazon web service sdk
 4. cloudbees docker build and publish
+
+### 5. store AWS credentials in jenkins
+1. go to manage jenkins >  credentials > system (at Stores scoped to Jenkins) > Global credentials (unrestricted)
+2. add credentials > Aws credentials
 
 ```
 pipeline {
