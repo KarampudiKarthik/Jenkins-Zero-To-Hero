@@ -16,7 +16,7 @@ pre reques
 4. create a jenkin job to access jenkins file from git repo
 5. test triggers
 
-### 1. create git repo
+
 1. create git repo
 2. open git bash command prompt in windows
 ```
@@ -88,5 +88,18 @@ it will add the Jenkinsfile in git
 
 ### to avoid host key verification failed in jenkins
 go to jenkins > manage jenkins > security > change  Git Host Key Verification Configuration - Apply first connect
+
+### configure trigger
+1. copy jenkins url
+   http://12.3.4.512:8080/
+2. go to git > project repo > settings > webhook
+3. paste the url in payload url
+   http://12.3.4.512:8080/github-webhook/
+4. content type-applicationJson
+
+done in git.
+
+1. go to jenkins > project > configure > build triggers
+2. check github hook trigger from GITScm pooling
 
 
