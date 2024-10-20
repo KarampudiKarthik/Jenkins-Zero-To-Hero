@@ -86,6 +86,7 @@ git push origin main
 
 it will add the Jenkinsfile in git
 
-
+### to avoid host key verification failed in jenkins
+go to jenkins > manage jenkins > security > change  Git Host Key Verification Configuration - Apply first connect
 
 
